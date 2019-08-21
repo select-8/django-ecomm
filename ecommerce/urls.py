@@ -34,5 +34,5 @@ urlpatterns = [
     re_path(r'^cart/', include(cart_urls)),
     re_path(r'^checkout/', include(checkout_urls)),
     re_path(r'^search/', include(search_urls)),
-    re_path(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
+    re_path(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT}),
 ]
